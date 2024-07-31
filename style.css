@@ -2,13 +2,25 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-img {
+button {
+    background: #3882f6;
+    color: #e5e7eb;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: #3882f6 solid 1px;
+}
+
+.img-boardgame {
     width: 300px;
     height: 200px;
     background-color: red;
+    border: solid #3882f6 2px;
+    border-radius: 8px;
 }
 
 /*css encabezado*/
@@ -16,8 +28,29 @@ img {
     background-color: #1F2937;
     color: #f9faf8;
     display: flex;
-    justify-content: space-around;
+    flex-flow: column wrap;
+    padding: 0 50px;
+    padding-bottom: 100px;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+
+}
+
+.header-container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 ul {
@@ -33,41 +66,21 @@ li {
 
 }
 
-.header-logo,
+h1,
 .header-links {
     color: #e5e7eb;
     font-size: 18px;
-
-
-
 }
 
-.header-container {
-    background-color: #1F2937;
-    color: #f9faf8;
-    display: flex;
-    flex: 1;
-    padding: 52px 72px;
-    justify-content: space-around;
-    align-items: start
-}
-
-.header-container-left {
-
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-
-
-}
-
-.header-text {
-
-    width: 300px;
-}
 
 .header-img {
-    width: 300px;
+    width: 500px;
+    min-width: 300px;
     height: 200px;
     background-color: red;
+}
+
+.header-tittle {
+    font-size: 48px;
+
 }
